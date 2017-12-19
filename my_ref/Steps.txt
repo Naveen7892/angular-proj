@@ -1,0 +1,40 @@
+====================1-INSTALL ANGULAR CLI=======================
+>> npm install -g @angular/cli
+
+>> ng new angular-proj
+
+>> cd angular-proj
+
+>> ng serve
+
+====================2-INSTALL BOOTSTRAP=======================
+>> npm install --save bootstrap
+
+In .angular-cli.json, link bootstrap file:
+
+"styles": [
+	"../node_modules/bootstrap/dist/css/bootstrap.min.css",
+	"styles.css"
+  ],
+====================3-CREATE HEADER COMPONENT=======================
+>> ng generate component header
+
+[ng g c header]
+
+====================3-CREATE RECIPES COMPONENT=======================
+>> ng g c recipes --spec false
+
+(to not to install test file)
+
+====================4-CREATE RECIPES-LIST AND OTHER COMPONENTS INSIDE RECIPES FOLDER=======================
+>> ng g c recipes/recipes-list --spec false
+
+(to not to install test file)
+
+>> ng g c recipes/recipes-detail --spec false
+
+>> ng g c shopping-list --spec false
+
+>> ng g c shopping-list/shopping-edit --spec false
+
+
